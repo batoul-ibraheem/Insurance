@@ -1,6 +1,6 @@
 {
   "common": {
-    "siteName": "Syrian Government Insurance",
+    "siteName": "Social Insurance Institution",
     "getQuote": "Get Quote",
     "learnMore": "Learn More",
     "contactUs": "Contact Us",
@@ -61,7 +61,7 @@
     "customerRatingDesc": "Highly rated by our policyholders"
   },
   "features": {
-    "title": "Why Choose Syrian Government Insurance Services?",
+    "title": "Why Choose Social Insurance Institution Services?",
     "description": "We're committed to providing exceptional service and comprehensive coverage that meets your unique needs.",
     "items": {
       "comprehensiveCoverage": {
@@ -144,14 +144,14 @@
     "legal": "Legal"
   },
   "about": {
-    "title": "About Syrian Government Insurance Services",
+    "title": "About Social Insurance Institution",
     "subtitle": "We are committed to providing comprehensive, affordable, and accessible insurance coverage for all citizens, ensuring peace of mind and financial security for you and your family.",
     "missionTitle": "Our Mission",
     "missionText1": "Our mission is to provide comprehensive insurance solutions that protect the health, property, and financial well-being of all Syrian citizens. We believe that quality insurance coverage should be accessible, affordable, and easy to understand.",
     "missionText2": "With years of experience and a deep commitment to public service, we work tirelessly to ensure that every citizen has access to the protection they need when they need it most.",
     "valuesTitle": "Our Core Values",
     "historyTitle": "Our History",
-    "historyText1": "Established to serve the public interest, Syrian Government Insurance Services has been a trusted partner in protecting citizens for decades. Our organization was founded on the principle that every citizen deserves access to quality insurance coverage.",
+    "historyText1": "Established to serve the public interest, Social Insurance Institution has been a trusted partner in protecting citizens for decades. Our organization was founded on the principle that every citizen deserves access to quality insurance coverage.",
     "historyText2": "Over the years, we have expanded our services to include comprehensive health, life, and property insurance options. We continue to evolve and adapt to meet the changing needs of our citizens while maintaining our commitment to transparency, integrity, and excellent service.",
     "historyText3": "Today, we serve millions of citizens across Syria, providing them with the security and peace of mind they need to live their lives with confidence."
   },
@@ -253,12 +253,12 @@
   "terms": {
     "pageTitle": "Terms of Service",
     "pageDescription": "Please read these terms carefully before using our services.",
-    "intro": "These Terms of Service govern your use of Syrian Government Insurance Services. By using our services, you agree to comply with and be bound by these terms.",
+    "intro": "These Terms of Service govern your use of Social Insurance Institution services. By using our services, you agree to comply with and be bound by these terms.",
     "sections": {
       "agreement": {
         "title": "Agreement to Terms",
         "content": [
-          "By accessing or using Syrian Government Insurance Services, you agree to be bound by these Terms of Service and all applicable laws and regulations.",
+          "By accessing or using Social Insurance Institution services, you agree to be bound by these Terms of Service and all applicable laws and regulations.",
           "If you do not agree with any of these terms, you are prohibited from using or accessing our services.",
           "We reserve the right to update these terms at any time, and your continued use of our services constitutes acceptance of any changes."
         ]
@@ -284,7 +284,7 @@
       "liability": {
         "title": "Limitation of Liability",
         "content": [
-          "Syrian Government Insurance Services provides insurance services in accordance with applicable laws and regulations.",
+          "Social Insurance Institution provides insurance services in accordance with applicable laws and regulations.",
           "We are not liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of our services.",
           "Our liability is limited to the coverage provided under your specific insurance policy.",
           "We make every effort to ensure the accuracy of information provided, but we do not guarantee that all information is error-free."
@@ -297,7 +297,7 @@
   "privacy": {
     "pageTitle": "Privacy Policy",
     "pageDescription": "Your privacy is important to us. Learn how we collect, use, and protect your personal information.",
-    "intro": "Syrian Government Insurance Services is committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our services.",
+    "intro": "Social Insurance Institution is committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our services.",
     "sections": {
       "collect": {
         "title": "Information We Collect",

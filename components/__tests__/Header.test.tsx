@@ -12,7 +12,7 @@ describe('Header Component', () => {
   it('renders the logo and site name', () => {
     render(<Header />)
     
-    expect(screen.getByText('Gov Insurance')).toBeInTheDocument()
+    expect(screen.getByText('Social Insurance Institution')).toBeInTheDocument()
   })
 
   it('renders navigation links', () => {

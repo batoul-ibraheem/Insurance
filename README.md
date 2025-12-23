@@ -1,6 +1,6 @@
-# Syrian Government Insurance - Frontend
+# Social Insurance Institution - Frontend
 
-A modern frontend application for Syrian Government Insurance services built with Next.js, React, and TypeScript.
+A modern frontend application for Social Insurance Institution services built with Next.js, React, and TypeScript.
 
 ## Features
 
@@ -31,8 +31,8 @@ A modern frontend application for Syrian Government Insurance services built wit
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/batoul-ibraheem/Insurance.git
-cd Insurance
+git clone https://github.com/batoul-ibraheem/Social-Insurance-Institution.git
+cd Social-Insurance-Institution
 ```
 
 2. Install dependencies:
@@ -48,7 +48,7 @@ cp .env.example .env.local
 4. Update environment variables in `.env.local`:
 ```env
 NEXT_PUBLIC_SITE_URL=http://localhost:3000
-NEXT_PUBLIC_SITE_NAME=Syrian Government Insurance
+NEXT_PUBLIC_SITE_NAME=Social Insurance Institution
 NEXT_PUBLIC_CONTACT_EMAIL=contact@insurance.gov.sy
 NEXT_PUBLIC_CONTACT_PHONE=+963-11-123-4567
 ```
@@ -133,7 +133,7 @@ This project is private and proprietary.
 
 ## Author
 
-Built for Syrian Government Insurance Services
+Built for Social Insurance Institution
 
 ---
 
@@ -145,4 +145,4 @@ Built for Syrian Government Insurance Services
 
 ---
 
-**Repository**: [https://github.com/batoul-ibraheem/Insurance](https://github.com/batoul-ibraheem/Insurance)
+**Repository**: [https://github.com/batoul-ibraheem/Social-Insurance-Institution](https://github.com/batoul-ibraheem/Social-Insurance-Institution)

@@ -23,14 +23,14 @@ const notoSansArabic = Noto_Sans_Arabic({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Syrian Government Insurance | Comprehensive Coverage for All Citizens',
-    template: '%s | Syrian Government Insurance',
+    default: 'Social Insurance Institution | Comprehensive Coverage for All Citizens',
+    template: '%s | Social Insurance Institution',
   },
-  description: 'Official Syrian government insurance services providing comprehensive health, life, and property insurance coverage for all citizens. Secure, reliable, and accessible protection for you and your family.',
-  keywords: ['syrian government insurance', 'syria insurance', 'health insurance syria', 'life insurance', 'property insurance', 'citizen insurance', 'public insurance syria'],
-  authors: [{ name: 'Syrian Government Insurance Services' }],
-  creator: 'Syrian Government Insurance Services',
-  publisher: 'Syrian Government Insurance Services',
+  description: 'Official Social Insurance Institution services providing comprehensive health, life, and property insurance coverage for all citizens. Secure, reliable, and accessible protection for you and your family.',
+  keywords: ['social insurance institution', 'syria insurance', 'health insurance syria', 'life insurance', 'property insurance', 'citizen insurance', 'public insurance syria'],
+  authors: [{ name: 'Social Insurance Institution' }],
+  creator: 'Social Insurance Institution',
+  publisher: 'Social Insurance Institution',
   formatDetection: {
     email: false,
     address: false,
@@ -44,14 +44,14 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000',
-    title: 'Syrian Government Insurance | Comprehensive Coverage for All Citizens',
-    description: 'Official Syrian government insurance services providing comprehensive coverage for all citizens.',
-    siteName: 'Syrian Government Insurance',
+    title: 'Social Insurance Institution | Comprehensive Coverage for All Citizens',
+    description: 'Official Social Insurance Institution services providing comprehensive coverage for all citizens.',
+    siteName: 'Social Insurance Institution',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Syrian Government Insurance | Comprehensive Coverage for All Citizens',
-    description: 'Official Syrian government insurance services providing comprehensive coverage for all citizens.',
+    title: 'Social Insurance Institution | Comprehensive Coverage for All Citizens',
+    description: 'Official Social Insurance Institution services providing comprehensive coverage for all citizens.',
   },
   robots: {
     index: true,
