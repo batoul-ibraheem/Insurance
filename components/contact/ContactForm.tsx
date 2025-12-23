@@ -42,7 +42,6 @@ export default function ContactForm() {
 
     try {
       // Simulate form submission (in a real app, this would call an API)
-      // Example: await fetch('/api/contact', { method: 'POST', body: JSON.stringify(formData) })
       await new Promise((resolve) => setTimeout(resolve, 1000))
       
       setIsSubmitting(false)
@@ -69,9 +68,11 @@ export default function ContactForm() {
   if (isSubmitted) {
     return (
       <div className="card text-center py-12 animate-scale-in">
-        <CheckCircle className="w-16 h-16 text-green-500 dark:text-green-400 mx-auto mb-4" />
-        <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-2">{t.common.messageSent}</h3>
-        <p className="text-gray-600 dark:text-gray-300">
+        <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-green-100 dark:bg-green-900/30 mb-4">
+          <CheckCircle className="w-8 h-8 text-green-600 dark:text-green-400" />
+        </div>
+        <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">{t.common.messageSent}</h3>
+        <p className="text-slate-600 dark:text-slate-400">
           {t.common.thankYou}
         </p>
       </div>
@@ -81,8 +82,8 @@ export default function ContactForm() {
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
       <div>
-        <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-          {t.common.fullName} *
+        <label htmlFor="name" className="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">
+          {t.common.fullName} <span className="text-red-500">*</span>
         </label>
         <input
           type="text"
@@ -91,14 +92,14 @@ export default function ContactForm() {
           required
           value={formData.name}
           onChange={handleChange}
-          className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+          className="w-full px-4 py-3 border-2 border-slate-200 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-800 text-slate-900 dark:text-white focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-200"
           placeholder={t.common.fullName}
         />
       </div>
 
       <div>
-        <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-          {t.common.emailAddress} *
+        <label htmlFor="email" className="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">
+          {t.common.emailAddress} <span className="text-red-500">*</span>
         </label>
         <input
           type="email"
@@ -107,13 +108,13 @@ export default function ContactForm() {
           required
           value={formData.email}
           onChange={handleChange}
-          className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+          className="w-full px-4 py-3 border-2 border-slate-200 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-800 text-slate-900 dark:text-white focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-200"
           placeholder={t.common.emailAddress}
         />
       </div>
 
       <div>
-        <label htmlFor="phone" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+        <label htmlFor="phone" className="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">
           {t.common.phoneNumber}
         </label>
         <input
@@ -122,14 +123,14 @@ export default function ContactForm() {
           name="phone"
           value={formData.phone}
           onChange={handleChange}
-          className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+          className="w-full px-4 py-3 border-2 border-slate-200 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-800 text-slate-900 dark:text-white focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-200"
           placeholder={t.common.phoneNumber}
         />
       </div>
 
       <div>
-        <label htmlFor="subject" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-          {t.common.subject} *
+        <label htmlFor="subject" className="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">
+          {t.common.subject} <span className="text-red-500">*</span>
         </label>
         <select
           id="subject"
@@ -137,7 +138,7 @@ export default function ContactForm() {
           required
           value={formData.subject}
           onChange={handleChange}
-          className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+          className="w-full px-4 py-3 border-2 border-slate-200 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-800 text-slate-900 dark:text-white focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-200"
         >
           <option value="">{t.common.selectSubject}</option>
           <option value="general">{t.contact.formSubjects.general}</option>
@@ -149,8 +150,8 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-          {t.common.message} *
+        <label htmlFor="message" className="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">
+          {t.common.message} <span className="text-red-500">*</span>
         </label>
         <textarea
           id="message"
@@ -159,7 +160,7 @@ export default function ContactForm() {
           rows={6}
           value={formData.message}
           onChange={handleChange}
-          className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all resize-none"
+          className="w-full px-4 py-3 border-2 border-slate-200 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-800 text-slate-900 dark:text-white focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-200 resize-none"
           placeholder={t.common.message}
         />
       </div>
@@ -167,14 +168,14 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={isSubmitting}
-        className={`btn-primary w-full ${isRTL ? 'flex-row-reverse' : ''}`}
+        className={`btn-primary w-full group ${isRTL ? 'flex-row-reverse' : ''}`}
       >
         {isSubmitting ? (
-          t.common.sending
+          <span>{t.common.sending}</span>
         ) : (
           <>
-            {t.common.sendMessage}
-            <Send className={`w-5 h-5 ${isRTL ? 'mr-2 rotate-180' : 'ml-2'}`} />
+            <span>{t.common.sendMessage}</span>
+            <Send className={`w-4 h-4 transition-transform duration-300 group-hover:translate-x-1 ${isRTL ? 'mr-2 rotate-180 group-hover:-translate-x-1' : 'ml-2'}`} />
           </>
         )}
       </button>

@@ -15,9 +15,9 @@ interface FAQAccordionProps {
 }
 
 export default function FAQAccordion({ questions }: FAQAccordionProps) {
+  const [openIndex, setOpenIndex] = useState<number | null>(0)
   const { dir } = useLanguage()
   const isRTL = dir === 'rtl'
-  const [openIndex, setOpenIndex] = useState<number | null>(0)
 
   const toggleQuestion = (index: number) => {
     setOpenIndex(openIndex === index ? null : index)
@@ -28,19 +28,27 @@ export default function FAQAccordion({ questions }: FAQAccordionProps) {
       {questions.map((item, index) => (
         <div
           key={index}
-          className={`card ${isRTL ? 'border-r-4 border-r-primary-500 dark:border-r-primary-400 hover:border-r-primary-600 dark:hover:border-r-primary-300' : 'border-l-4 border-l-primary-500 dark:border-l-primary-400 hover:border-l-primary-600 dark:hover:border-l-primary-300'} transition-colors`}
+          className={cn(
+            "card border-l-4 transition-all duration-300 hover:shadow-lg",
+            openIndex === index 
+              ? "border-l-primary-500 dark:border-l-primary-400 bg-primary-50/50 dark:bg-primary-900/10" 
+              : "border-l-slate-200 dark:border-l-slate-700 hover:border-l-primary-400 dark:hover:border-l-primary-500",
+            isRTL && "border-l-0 border-r-4",
+            isRTL && openIndex === index && "border-r-primary-500 dark:border-r-primary-400",
+            isRTL && openIndex !== index && "border-r-slate-200 dark:border-r-slate-700 hover:border-r-primary-400 dark:hover:border-r-primary-500"
+          )}
         >
           <button
             onClick={() => toggleQuestion(index)}
-            className={`w-full flex items-center justify-between ${isRTL ? 'flex-row-reverse text-right' : 'text-left'}`}
+            className={`w-full flex items-center justify-between gap-4 text-left ${isRTL ? 'flex-row-reverse text-right' : ''}`}
             aria-expanded={openIndex === index}
           >
-            <h3 className={`text-lg font-semibold text-gray-900 dark:text-white ${isRTL ? 'pl-4' : 'pr-4'}`}>
+            <h3 className={`text-lg font-bold text-slate-900 dark:text-slate-50 flex-1 ${openIndex === index ? 'text-primary-700 dark:text-primary-300' : ''} transition-colors duration-200`}>
               {item.question}
             </h3>
             <ChevronDown
               className={cn(
-                'w-5 h-5 text-primary-600 dark:text-primary-400 flex-shrink-0 transition-transform duration-200',
+                'w-5 h-5 text-primary-600 dark:text-primary-400 flex-shrink-0 transition-all duration-300',
                 openIndex === index && 'transform rotate-180'
               )}
             />
@@ -51,7 +59,7 @@ export default function FAQAccordion({ questions }: FAQAccordionProps) {
               openIndex === index ? 'max-h-96 opacity-100 mt-4' : 'max-h-0 opacity-0'
             )}
           >
-            <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+            <p className={`text-slate-600 dark:text-slate-300 leading-relaxed ${isRTL ? 'text-right' : 'text-left'}`}>
               {item.answer}
             </p>
           </div>

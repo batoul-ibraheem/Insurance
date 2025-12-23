@@ -11,6 +11,20 @@ const iconMap = {
   auto: Car,
 }
 
+const iconColors = {
+  health: 'text-red-500 dark:text-red-400',
+  property: 'text-blue-500 dark:text-blue-400',
+  life: 'text-purple-500 dark:text-purple-400',
+  auto: 'text-amber-500 dark:text-amber-400',
+}
+
+const iconBgColors = {
+  health: 'bg-red-50 dark:bg-red-900/20',
+  property: 'bg-blue-50 dark:bg-blue-900/20',
+  life: 'bg-purple-50 dark:bg-purple-900/20',
+  auto: 'bg-amber-50 dark:bg-amber-900/20',
+}
+
 export default function Services() {
   const { t, dir } = useLanguage()
   const isRTL = dir === 'rtl'
@@ -35,21 +49,23 @@ export default function Services() {
               <Link
                 key={key}
                 href="/services"
-                className="card group transition-all duration-150"
+                className="card group transition-all duration-300 hover:shadow-xl"
                 style={{ animationDelay: `${index * 50}ms` }}
               >
-                <div className="p-3 rounded-lg bg-slate-100 dark:bg-slate-800/50 mb-5 inline-block group-hover:bg-slate-200 dark:group-hover:bg-slate-800 transition-colors duration-150">
-                  <Icon className="w-6 h-6 text-slate-700 dark:text-slate-300" />
-                </div>
-                <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-50 mb-3">
-                  {service.title}
-                </h3>
-                <p className="text-sm text-slate-600 dark:text-slate-400 mb-5 leading-6">
-                  {service.description}
-                </p>
-                <div className={`flex items-center text-sm font-medium text-slate-700 dark:text-slate-300 group-hover:text-slate-900 dark:group-hover:text-slate-100 ${isRTL ? 'flex-row-reverse' : ''}`}>
-                  {t.common.learnMore}
-                  <ArrowRight className={`w-4 h-4 ${isRTL ? 'mr-2 rotate-180' : 'ml-2'} group-hover:translate-x-0.5 transition-transform`} />
+                <div className={`flex flex-col items-start ${isRTL ? 'text-right' : 'text-left'}`}>
+                  <div className={`p-3.5 rounded-xl ${iconBgColors[key]} mb-5 group-hover:scale-110 transition-transform duration-300`}>
+                    <Icon className={`w-7 h-7 ${iconColors[key]}`} />
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-900 dark:text-slate-50 mb-3 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors duration-200">
+                    {service.title}
+                  </h3>
+                  <p className="text-sm text-slate-600 dark:text-slate-400 mb-6 leading-6 flex-1">
+                    {service.description}
+                  </p>
+                  <div className={`flex items-center gap-2 text-sm font-semibold text-primary-600 dark:text-primary-400 group-hover:text-primary-700 dark:group-hover:text-primary-300 transition-colors duration-200 ${isRTL ? 'flex-row-reverse ml-auto' : ''}`}>
+                    <span>{t.common.learnMore}</span>
+                    <ArrowRight className={`w-4 h-4 transition-transform duration-300 group-hover:translate-x-1 ${isRTL ? 'rotate-180 group-hover:-translate-x-1' : ''}`} />
+                  </div>
                 </div>
               </Link>
             )
@@ -57,8 +73,9 @@ export default function Services() {
         </div>
 
         <div className="text-center mt-12">
-          <Link href="/services" className="btn-secondary">
-            {t.services.viewAll}
+          <Link href="/services" className="btn-secondary group">
+            <span>{t.services.viewAll}</span>
+            <ArrowRight className={`w-4 h-4 transition-transform duration-300 group-hover:translate-x-1 ${isRTL ? 'mr-2 rotate-180 group-hover:-translate-x-1' : 'ml-2'}`} />
           </Link>
         </div>
       </div>

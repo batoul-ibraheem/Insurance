@@ -22,37 +22,38 @@ export default function Header() {
   ]
 
   return (
-    <header className="sticky top-0 z-50 bg-white dark:bg-slate-950 border-b border-slate-200 dark:border-slate-800/50">
+    <header className="sticky top-0 z-50 bg-white/95 dark:bg-slate-950/95 backdrop-blur-md border-b border-slate-200 dark:border-slate-800/50 shadow-sm">
       <nav className="container-custom" aria-label="Global">
         <div className={`flex items-center justify-between h-20 ${isRTL ? 'flex-row-reverse' : ''}`}>
           {/* Logo */}
           <div className="flex items-center">
-            <Link href="/" className={`flex items-center ${isRTL ? 'flex-row-reverse space-x-reverse' : ''} space-x-3`}>
-              <div className="p-2 bg-primary-600 rounded-lg">
+            <Link href="/" className={`flex items-center gap-3 group transition-opacity duration-200 hover:opacity-80 ${isRTL ? 'flex-row-reverse' : ''}`}>
+              <div className="p-2.5 bg-gradient-to-br from-primary-600 to-primary-700 rounded-xl shadow-lg group-hover:shadow-xl transition-shadow duration-300">
                 <Shield className="w-6 h-6 text-white" />
               </div>
-              <span className="text-lg font-semibold text-slate-900 dark:text-slate-50 tracking-tight">
+              <span className="text-lg font-bold text-slate-900 dark:text-slate-50 tracking-tight">
                 {t.common.siteName}
               </span>
             </Link>
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex md:items-center md:gap-4 rtl:md:gap-reverse">
+          <div className={`hidden md:flex md:items-center gap-2 ${isRTL ? 'flex-row-reverse' : ''}`}>
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 transition-colors duration-150"
+                className="px-4 py-2 text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800/50 transition-all duration-200"
               >
                 {item.name}
               </Link>
             ))}
+            <div className="w-px h-6 bg-slate-200 dark:bg-slate-700 mx-1"></div>
             <LanguageSwitcher />
             <ThemeToggle />
             <Link
               href="/contact"
-              className="btn-primary rtl:mr-3 ltr:ml-3 text-sm"
+              className="btn-primary ml-2 rtl:ml-0 rtl:mr-2 text-sm"
             >
               {t.common.getQuote}
             </Link>
@@ -64,9 +65,9 @@ export default function Header() {
             <ThemeToggle />
             <button
               type="button"
-              className="inline-flex items-center justify-center p-2 text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition-colors"
+              className="inline-flex items-center justify-center p-2.5 text-slate-700 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-all duration-200"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              aria-expanded="false"
+              aria-expanded={mobileMenuOpen}
               aria-label="Toggle navigation menu"
             >
               {mobileMenuOpen ? (
@@ -85,12 +86,12 @@ export default function Header() {
             mobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
           )}
         >
-          <div className={`py-4 space-y-4 border-t border-gray-200 dark:border-gray-700 ${isRTL ? 'text-right' : 'text-left'}`}>
+          <div className={`py-4 space-y-2 border-t border-slate-200 dark:border-slate-700 ${isRTL ? 'text-right' : 'text-left'}`}>
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className="block px-4 py-2 text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg font-medium transition-colors"
+                className="block px-4 py-2.5 text-slate-700 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg font-medium transition-all duration-200"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {item.name}
@@ -98,7 +99,7 @@ export default function Header() {
             ))}
             <Link
               href="/contact"
-              className="block mx-4 btn-primary text-center"
+              className="block mx-4 mt-4 btn-primary text-center"
               onClick={() => setMobileMenuOpen(false)}
             >
               {t.common.getQuote}

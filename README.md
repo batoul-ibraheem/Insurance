@@ -127,13 +127,6 @@ npm start
 
 See `.env.example` for all available environment variables.
 
-## License
-
-This project is private and proprietary.
-
-## Author
-
-Built for Social Insurance Institution
 
 ---
 
@@ -142,7 +135,3 @@ Built for Social Insurance Institution
 - 📧 Email: [batoul7ibraheem@gmail.com](mailto:batoul7ibraheem@gmail.com)
 - 📱 Phone: +963938958440
 - 💼 LinkedIn: [batoul-ibraheem](https://www.linkedin.com/in/batoul-ibraheem/)
-
----
-
-**Repository**: [https://github.com/batoul-ibraheem/Social-Insurance-Institution](https://github.com/batoul-ibraheem/Social-Insurance-Institution)

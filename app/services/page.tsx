@@ -1,6 +1,6 @@
 'use client'
 
-import { Heart, Home, Briefcase, Car, Umbrella, Building2 } from 'lucide-react'
+import { Heart, Home, Briefcase, Car, Umbrella, Building2, ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 import { useLanguage } from '@/contexts/LanguageContext'
 
@@ -63,10 +63,10 @@ export default function ServicesPage() {
                   </ul>
                   <Link
                     href="/contact"
-                    className={`text-primary-600 dark:text-primary-400 font-semibold hover:text-primary-700 dark:hover:text-primary-300 transition-colors inline-flex items-center ${isRTL ? 'flex-row-reverse' : ''}`}
+                    className={`text-primary-600 dark:text-primary-400 font-semibold hover:text-primary-700 dark:hover:text-primary-300 transition-all duration-200 inline-flex items-center gap-2 group/link ${isRTL ? 'flex-row-reverse' : ''}`}
                   >
-                    {t.common.learnMore}
-                    <span className={`${isRTL ? 'mr-2 group-hover:-translate-x-1' : 'ml-2 group-hover:translate-x-1'} transition-transform`}>→</span>
+                    <span>{t.common.learnMore}</span>
+                    <ArrowRight className={`w-4 h-4 transition-transform duration-300 group-hover/link:translate-x-1 ${isRTL ? 'rotate-180 group-hover/link:-translate-x-1' : ''}`} />
                   </Link>
                 </div>
               )

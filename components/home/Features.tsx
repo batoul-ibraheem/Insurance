@@ -12,6 +12,24 @@ const iconMap = {
   secure: Lock,
 }
 
+const iconColors = {
+  comprehensiveCoverage: 'text-blue-500 dark:text-blue-400',
+  affordablePremiums: 'text-green-500 dark:text-green-400',
+  quickClaims: 'text-amber-500 dark:text-amber-400',
+  customerSupport: 'text-purple-500 dark:text-purple-400',
+  easyApplication: 'text-indigo-500 dark:text-indigo-400',
+  secure: 'text-red-500 dark:text-red-400',
+}
+
+const iconBgColors = {
+  comprehensiveCoverage: 'bg-blue-50 dark:bg-blue-900/20',
+  affordablePremiums: 'bg-green-50 dark:bg-green-900/20',
+  quickClaims: 'bg-amber-50 dark:bg-amber-900/20',
+  customerSupport: 'bg-purple-50 dark:bg-purple-900/20',
+  easyApplication: 'bg-indigo-50 dark:bg-indigo-900/20',
+  secure: 'bg-red-50 dark:bg-red-900/20',
+}
+
 export default function Features() {
   const { t, dir } = useLanguage()
   const isRTL = dir === 'rtl'
@@ -42,15 +60,15 @@ export default function Features() {
             return (
               <div 
                 key={key} 
-                className="card group transition-all duration-150"
+                className="card group transition-all duration-300 hover:shadow-xl"
                 style={{ animationDelay: `${index * 50}ms` }}
               >
-                <div className={`flex items-start ${isRTL ? 'flex-row-reverse' : ''}`}>
-                  <div className={`p-2.5 rounded-lg bg-slate-100 dark:bg-slate-800/50 ${isRTL ? 'ml-4' : 'mr-4'} flex-shrink-0 group-hover:bg-slate-200 dark:group-hover:bg-slate-800 transition-colors duration-150`}>
-                    <Icon className="w-5 h-5 text-slate-700 dark:text-slate-300" />
+                <div className={`flex items-start gap-4 ${isRTL ? 'flex-row-reverse' : ''}`}>
+                  <div className={`p-3 rounded-xl ${iconBgColors[key]} flex-shrink-0 group-hover:scale-110 transition-transform duration-300`}>
+                    <Icon className={`w-6 h-6 ${iconColors[key]}`} />
                   </div>
-                  <div>
-                    <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-50 mb-2">
+                  <div className="flex-1">
+                    <h3 className="text-lg font-bold text-slate-900 dark:text-slate-50 mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors duration-200">
                       {feature.title}
                     </h3>
                     <p className="text-sm text-slate-600 dark:text-slate-400 leading-6">
