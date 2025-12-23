@@ -31,7 +31,7 @@ A modern frontend application for Syrian Government Insurance services built wit
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/batoul-ibraheem/Insurance.git
 cd Insurance
 ```
 
@@ -134,3 +134,15 @@ This project is private and proprietary.
 ## Author
 
 Built for Syrian Government Insurance Services
+
+---
+
+## Contact
+
+- 📧 Email: [batoul7ibraheem@gmail.com](mailto:batoul7ibraheem@gmail.com)
+- 📱 Phone: +963938958440
+- 💼 LinkedIn: [batoul-ibraheem](https://www.linkedin.com/in/batoul-ibraheem/)
+
+---
+
+**Repository**: [https://github.com/batoul-ibraheem/Insurance](https://github.com/batoul-ibraheem/Insurance)
