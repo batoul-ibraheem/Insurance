@@ -1,0 +1,165 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-inter: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-arabic: 'Noto Sans Arabic', system-ui, sans-serif;
+  }
+
+  html[dir='rtl'] {
+    font-family: var(--font-arabic), system-ui, sans-serif;
+  }
+
+  html[dir='rtl'] body {
+    font-family: var(--font-arabic), system-ui, sans-serif;
+  }
+
+  html[dir='ltr'] {
+    font-family: var(--font-inter), system-ui, sans-serif;
+  }
+
+  html[dir='ltr'] body {
+    font-family: var(--font-inter), system-ui, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply text-slate-900 transition-colors duration-300;
+    background: #ffffff;
+    background-attachment: fixed;
+  }
+
+  body.dark {
+    @apply text-slate-100;
+    background: #0a0e27;
+    background-attachment: fixed;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-12 sm:py-16 lg:py-20;
+  }
+
+  /* Primary button - sophisticated solid color */
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-8 py-3.5 text-sm font-medium text-white rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-900 dark:focus:ring-slate-100 transition-all duration-150 disabled:opacity-50 disabled:cursor-not-allowed;
+    background: #1e293b;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  }
+
+  .btn-primary:hover {
+    background: #0f172a;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+
+  .dark .btn-primary {
+    background: #f8fafc;
+    color: #0f172a;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  }
+
+  .dark .btn-primary:hover {
+    background: #ffffff;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Secondary button */
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-8 py-3.5 text-sm font-medium rounded-md border focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-900 dark:focus:ring-slate-100 transition-all duration-150;
+    background: transparent;
+    border-color: #cbd5e1;
+    color: #475569;
+    box-shadow: none;
+  }
+
+  .btn-secondary:hover {
+    background: #f8fafc;
+    border-color: #94a3b8;
+    color: #1e293b;
+  }
+
+  .dark .btn-secondary {
+    border-color: rgba(255, 255, 255, 0.2);
+    color: #e2e8f0;
+  }
+
+  .dark .btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+  }
+
+  /* Outline button - for use on colored backgrounds */
+  .btn-outline {
+    @apply inline-flex items-center justify-center px-8 py-3.5 text-sm font-medium text-white bg-transparent border-2 border-white/30 rounded-md hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white/50 transition-all duration-150;
+    box-shadow: none;
+  }
+
+  .btn-outline:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .card {
+    @apply rounded-lg p-8 transition-all duration-150 border;
+    background: #ffffff;
+    border-color: #e2e8f0;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+  }
+
+  .dark .card {
+    background: rgba(15, 23, 42, 0.8);
+    border-color: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+  }
+
+  .card:hover {
+    border-color: #cbd5e1;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+  }
+
+  .dark .card:hover {
+    border-color: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  }
+
+  .heading-primary {
+    @apply text-4xl sm:text-5xl lg:text-6xl font-semibold text-slate-900 dark:text-slate-50 leading-[1.1] tracking-tight;
+  }
+
+  .heading-secondary {
+    @apply text-3xl sm:text-4xl lg:text-5xl font-semibold text-slate-900 dark:text-slate-50 leading-[1.2] tracking-tight;
+  }
+
+  .text-body {
+    @apply text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-7;
+  }
+
+  /* Animation utilities */
+  .animate-on-scroll {
+    @apply opacity-0 translate-y-4 transition-all duration-700;
+  }
+
+  .animate-on-scroll.visible {
+    @apply opacity-100 translate-y-0;
+  }
+}
+
+/* RTL Support */
+html[dir='rtl'] {
+  direction: rtl;
+}
+
+html[dir='ltr'] {
+  direction: ltr;
+}

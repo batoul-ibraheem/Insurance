@@ -1,0 +1,343 @@
+{
+  "common": {
+    "siteName": "Syrian Government Insurance",
+    "getQuote": "Get Quote",
+    "learnMore": "Learn More",
+    "contactUs": "Contact Us",
+    "readMore": "Read More",
+    "allRightsReserved": "All rights reserved",
+    "sendMessage": "Send Message",
+    "sending": "Sending...",
+    "messageSent": "Message Sent!",
+    "thankYou": "Thank you for contacting us. We'll get back to you as soon as possible.",
+    "selectSubject": "Select a subject",
+    "fullName": "Full Name",
+    "emailAddress": "Email Address",
+    "phoneNumber": "Phone Number",
+    "subject": "Subject",
+    "message": "Message",
+    "lastUpdated": "Last updated",
+    "notFound": {
+      "title": "Page Not Found",
+      "description": "Sorry, we couldn't find the page you're looking for. It might have been moved or doesn't exist.",
+      "goHome": "Go Back Home"
+    },
+    "error": {
+      "title": "Something went wrong",
+      "description": "We apologize for the inconvenience. Please try refreshing the page or return to the home page.",
+      "tryAgain": "Try Again",
+      "goHome": "Go Home"
+    },
+    "loading": "Loading..."
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "hero": {
+    "trustBadge": "Trusted by Millions of Citizens",
+    "title": "Comprehensive Insurance Coverage",
+    "subtitle": "For All Syrian Citizens",
+    "description": "Secure your future with our comprehensive insurance services. Affordable, accessible, and reliable protection for you and your family, provided by the Syrian government.",
+    "ctaPrimary": "Get Started Today",
+    "ctaSecondary": "Explore Services",
+    "features": {
+      "noHiddenFees": "No Hidden Fees",
+      "support24": "24/7 Support",
+      "easyClaims": "Easy Claims Process"
+    }
+  },
+  "stats": {
+    "citizensCovered": "Citizens Covered",
+    "citizensCoveredDesc": "Millions of Syrian citizens trust us for their insurance needs",
+    "uptime": "Uptime",
+    "uptimeDesc": "Reliable service you can count on",
+    "yearsOfService": "Years of Service",
+    "yearsOfServiceDesc": "Decades of experience serving the public",
+    "customerRating": "Customer Rating",
+    "customerRatingDesc": "Highly rated by our policyholders"
+  },
+  "features": {
+    "title": "Why Choose Syrian Government Insurance Services?",
+    "description": "We're committed to providing exceptional service and comprehensive coverage that meets your unique needs.",
+    "items": {
+      "comprehensiveCoverage": {
+        "title": "Comprehensive Coverage",
+        "description": "Wide range of insurance products to protect every aspect of your life and assets."
+      },
+      "affordablePremiums": {
+        "title": "Affordable Premiums",
+        "description": "Competitive pricing designed to be accessible to all citizens regardless of income."
+      },
+      "quickClaims": {
+        "title": "Quick Claims Processing",
+        "description": "Streamlined claims process to get you back on track as quickly as possible."
+      },
+      "customerSupport": {
+        "title": "24/7 Customer Support",
+        "description": "Round-the-clock assistance whenever you need help or have questions."
+      },
+      "easyApplication": {
+        "title": "Easy Application Process",
+        "description": "Simple, straightforward application process with minimal paperwork required."
+      },
+      "secure": {
+        "title": "Secure & Confidential",
+        "description": "Your personal information is protected with industry-leading security measures."
+      }
+    }
+  },
+  "services": {
+    "title": "Our Insurance Services",
+    "description": "Explore our comprehensive range of insurance products designed to protect what matters most to you.",
+    "viewAll": "View All Services",
+    "pageTitle": "Our Insurance Services",
+    "pageDescription": "Comprehensive insurance solutions designed to protect what matters most to you.",
+    "ctaTitle": "Ready to Get Started?",
+    "ctaDescription": "Contact us today to learn more about our insurance services and find the perfect coverage for your needs.",
+    "items": {
+      "health": {
+        "title": "Health Insurance",
+        "description": "Comprehensive health coverage for you and your family with access to quality healthcare providers across Syria.",
+        "features": ["Preventive care coverage", "Emergency services", "Prescription drugs", "Mental health services"]
+      },
+      "property": {
+        "title": "Property Insurance",
+        "description": "Protect your home and belongings with comprehensive property insurance coverage.",
+        "features": ["Home protection", "Personal property coverage", "Liability protection", "Additional living expenses"]
+      },
+      "life": {
+        "title": "Life Insurance",
+        "description": "Secure your family's financial future with flexible life insurance options.",
+        "features": ["Term life insurance", "Whole life insurance", "Accidental death coverage", "Family protection"]
+      },
+      "auto": {
+        "title": "Auto Insurance",
+        "description": "Complete auto coverage that meets legal requirements and protects your vehicle.",
+        "features": ["Liability coverage", "Collision coverage", "Comprehensive coverage", "Roadside assistance"]
+      },
+      "travel": {
+        "title": "Travel Insurance",
+        "description": "Travel with confidence knowing you're covered for unexpected events during your trip.",
+        "features": ["Trip cancellation", "Medical emergencies abroad", "Baggage protection", "Travel delays"]
+      },
+      "business": {
+        "title": "Business Insurance",
+        "description": "Protect your business with comprehensive coverage tailored to your specific needs.",
+        "features": ["General liability", "Property insurance", "Workers compensation", "Business interruption"]
+      }
+    }
+  },
+  "cta": {
+    "title": "Ready to Get Protected?",
+    "description": "Join millions of Syrian citizens who trust Government Insurance Services for their coverage needs. Get started today with a free quote.",
+    "getQuote": "Get a Free Quote",
+    "callNow": "Call Us Now"
+  },
+  "footer": {
+    "description": "Providing comprehensive, affordable, and accessible insurance coverage for all Syrian citizens. Your security is our priority.",
+    "services": "Services",
+    "company": "Company",
+    "legal": "Legal"
+  },
+  "about": {
+    "title": "About Syrian Government Insurance Services",
+    "subtitle": "We are committed to providing comprehensive, affordable, and accessible insurance coverage for all citizens, ensuring peace of mind and financial security for you and your family.",
+    "missionTitle": "Our Mission",
+    "missionText1": "Our mission is to provide comprehensive insurance solutions that protect the health, property, and financial well-being of all Syrian citizens. We believe that quality insurance coverage should be accessible, affordable, and easy to understand.",
+    "missionText2": "With years of experience and a deep commitment to public service, we work tirelessly to ensure that every citizen has access to the protection they need when they need it most.",
+    "valuesTitle": "Our Core Values",
+    "historyTitle": "Our History",
+    "historyText1": "Established to serve the public interest, Syrian Government Insurance Services has been a trusted partner in protecting citizens for decades. Our organization was founded on the principle that every citizen deserves access to quality insurance coverage.",
+    "historyText2": "Over the years, we have expanded our services to include comprehensive health, life, and property insurance options. We continue to evolve and adapt to meet the changing needs of our citizens while maintaining our commitment to transparency, integrity, and excellent service.",
+    "historyText3": "Today, we serve millions of citizens across Syria, providing them with the security and peace of mind they need to live their lives with confidence."
+  },
+  "contact": {
+    "pageTitle": "Contact Us",
+    "pageDescription": "Have questions? We're here to help. Get in touch with our team today.",
+    "sendMessage": "Send us a Message",
+    "getInTouch": "Get in Touch",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "businessHours": "Business Hours",
+    "addressValue": "Damascus, Syria",
+    "hoursValue": "Monday - Friday: 8:00 AM - 6:00 PM\nSaturday: 9:00 AM - 2:00 PM",
+    "formSubjects": {
+      "general": "General Inquiry",
+      "quote": "Request a Quote",
+      "claim": "File a Claim",
+      "policy": "Policy Questions",
+      "other": "Other"
+    }
+  },
+  "faq": {
+    "pageTitle": "Frequently Asked Questions",
+    "pageDescription": "Find answers to common questions about our insurance services and policies.",
+    "stillHaveQuestions": "Still Have Questions?",
+    "stillHaveQuestionsDesc": "Can't find what you're looking for? Our team is here to help.",
+    "categories": {
+      "general": {
+        "title": "General Questions",
+        "questions": [
+          {
+            "question": "What types of insurance do you offer?",
+            "answer": "We offer comprehensive insurance services including health, life, property, auto, travel, and business insurance. Each type of coverage is designed to meet the specific needs of our citizens."
+          },
+          {
+            "question": "How do I apply for insurance?",
+            "answer": "You can apply for insurance through our online portal, by phone, or by visiting one of our offices. Our application process is straightforward and designed to be accessible to everyone."
+          },
+          {
+            "question": "Are your services available to all citizens?",
+            "answer": "Yes, our insurance services are available to all citizens. We are committed to providing accessible and affordable coverage options regardless of income level or background."
+          }
+        ]
+      },
+      "coverage": {
+        "title": "Coverage & Policies",
+        "questions": [
+          {
+            "question": "What does my insurance policy cover?",
+            "answer": "Coverage varies by policy type. Each policy includes detailed information about what is covered, coverage limits, and any exclusions. We recommend reviewing your policy documents or contacting us for specific details about your coverage."
+          },
+          {
+            "question": "Can I customize my coverage?",
+            "answer": "Yes, we offer flexible coverage options that can be tailored to your specific needs. Our representatives can help you choose the right coverage levels and additional options for your situation."
+          },
+          {
+            "question": "How do I update my policy?",
+            "answer": "You can update your policy by logging into your online account, calling our customer service line, or visiting one of our offices. Changes typically take effect according to the terms of your policy."
+          }
+        ]
+      },
+      "claims": {
+        "title": "Claims Process",
+        "questions": [
+          {
+            "question": "How do I file a claim?",
+            "answer": "You can file a claim online through your account portal, by phone, or by submitting a claim form. Our claims process is designed to be simple and efficient to get you back on track as quickly as possible."
+          },
+          {
+            "question": "How long does it take to process a claim?",
+            "answer": "Claim processing times vary depending on the type of claim and the information provided. Simple claims are typically processed within a few business days, while more complex claims may take longer. We keep you informed throughout the process."
+          },
+          {
+            "question": "What documents do I need to file a claim?",
+            "answer": "Required documents vary by claim type, but generally include incident reports, photographs, receipts, and any relevant medical or repair documentation. Our claims team will guide you through the specific requirements for your claim."
+          }
+        ]
+      },
+      "payment": {
+        "title": "Payment & Billing",
+        "questions": [
+          {
+            "question": "How do I pay my premium?",
+            "answer": "You can pay your premium online through your account, by automatic bank transfer, by mail, or in person at one of our offices. We offer flexible payment options including monthly, quarterly, and annual payment plans."
+          },
+          {
+            "question": "What payment methods do you accept?",
+            "answer": "We accept credit cards, debit cards, bank transfers, and checks. Online payments can be made securely through our portal, and we also accept payments by phone."
+          },
+          {
+            "question": "What happens if I miss a payment?",
+            "answer": "If you miss a payment, we will contact you to discuss payment options. We understand that financial situations can change, and we work with policyholders to find solutions that maintain their coverage."
+          }
+        ]
+      }
+    }
+  },
+  "terms": {
+    "pageTitle": "Terms of Service",
+    "pageDescription": "Please read these terms carefully before using our services.",
+    "intro": "These Terms of Service govern your use of Syrian Government Insurance Services. By using our services, you agree to comply with and be bound by these terms.",
+    "sections": {
+      "agreement": {
+        "title": "Agreement to Terms",
+        "content": [
+          "By accessing or using Syrian Government Insurance Services, you agree to be bound by these Terms of Service and all applicable laws and regulations.",
+          "If you do not agree with any of these terms, you are prohibited from using or accessing our services.",
+          "We reserve the right to update these terms at any time, and your continued use of our services constitutes acceptance of any changes."
+        ]
+      },
+      "use": {
+        "title": "Use of Services",
+        "content": [
+          "You agree to use our services only for lawful purposes and in accordance with these Terms of Service.",
+          "You are responsible for maintaining the confidentiality of your account information and for all activities that occur under your account.",
+          "You agree to provide accurate, current, and complete information when applying for insurance or using our services.",
+          "You must notify us immediately of any unauthorized use of your account or any other breach of security."
+        ]
+      },
+      "policies": {
+        "title": "Insurance Policies",
+        "content": [
+          "All insurance policies are subject to the terms, conditions, and exclusions set forth in the policy documents.",
+          "Coverage is provided in accordance with the specific terms of your policy, and benefits are subject to the policy limits and deductibles you have selected.",
+          "Premiums are due as specified in your policy, and failure to pay may result in cancellation of coverage.",
+          "You are responsible for reviewing your policy documents and understanding your coverage."
+        ]
+      },
+      "liability": {
+        "title": "Limitation of Liability",
+        "content": [
+          "Syrian Government Insurance Services provides insurance services in accordance with applicable laws and regulations.",
+          "We are not liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of our services.",
+          "Our liability is limited to the coverage provided under your specific insurance policy.",
+          "We make every effort to ensure the accuracy of information provided, but we do not guarantee that all information is error-free."
+        ]
+      }
+    },
+    "questionsTitle": "Questions About Terms",
+    "questionsDesc": "If you have questions about these Terms of Service, please contact us:"
+  },
+  "privacy": {
+    "pageTitle": "Privacy Policy",
+    "pageDescription": "Your privacy is important to us. Learn how we collect, use, and protect your personal information.",
+    "intro": "Syrian Government Insurance Services is committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our services.",
+    "sections": {
+      "collect": {
+        "title": "Information We Collect",
+        "content": [
+          "We collect information that you provide directly to us when you apply for insurance, file a claim, or contact us for assistance.",
+          "This may include personal identification information, contact details, financial information, health information (for health insurance), and other relevant data necessary to provide our services.",
+          "We also collect information automatically when you visit our website, such as IP address, browser type, and usage data."
+        ]
+      },
+      "use": {
+        "title": "How We Use Your Information",
+        "content": [
+          "We use your information to provide, maintain, and improve our insurance services.",
+          "To process applications, manage policies, and handle claims.",
+          "To communicate with you about your policy, important updates, and customer service inquiries.",
+          "To comply with legal obligations and prevent fraud or abuse.",
+          "To analyze and improve our services and user experience."
+        ]
+      },
+      "security": {
+        "title": "Information Security",
+        "content": [
+          "We implement industry-standard security measures to protect your personal information from unauthorized access, alteration, disclosure, or destruction.",
+          "All data is encrypted both in transit and at rest.",
+          "Access to personal information is restricted to authorized personnel only, and we regularly review our security practices.",
+          "Despite our efforts, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security."
+        ]
+      },
+      "rights": {
+        "title": "Your Rights",
+        "content": [
+          "You have the right to access, update, or correct your personal information.",
+          "You can request a copy of the personal information we hold about you.",
+          "You may request deletion of your personal information, subject to legal and contractual obligations.",
+          "You can opt out of certain communications from us, though we may still send important policy-related messages.",
+          "To exercise these rights, please contact us using the information provided in the Contact section."
+        ]
+      }
+    },
+    "contactTitle": "Contact Us",
+    "contactDesc": "If you have questions about this Privacy Policy or our data practices, please contact us:"
+  }
+}
